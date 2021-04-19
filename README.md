@@ -104,7 +104,7 @@ When comparing the sales price of houses that have been renovated (769 thousand 
 
 
 
-<img src="Pictures/corr.png" width=80%>
+<img src="Pictures/Corr.png" width=80%>
 
 
 
@@ -118,7 +118,7 @@ To determine which features of a house affect their sales price, I performed a c
 
 
 
-<img src="Pictures/zipcode.png" width=100%>
+<img src="Pictures/Zipcode.png" width=100%>
 
 
 
@@ -159,7 +159,7 @@ In order to be able to build a model to predict the sales price of a home, I wil
 
 
 
-<img src="Pictures/multi_cor.png" width=30%>
+<img src="Pictures/Multi_Cor.png" width=30%>
 
 
 
@@ -188,7 +188,7 @@ The r-squared value for this model is 0.489. This model also shows that the p va
 
 ### Model 2
 
-In this model, I kept all the independent variables that I used on model 1 but in addition also included zipcode as a categorical independent variable. I have choosen this variable because while exploring the data, I have had the sense that even though zipcode did not correlate with price there was more to it than what meets the eye. 
+In this model, I kept all the independent variables that I used on model 1 but in addition also included zip code as a categorical independent variable. I have choosen this variable because while exploring the data, I have had the sense that even though zip code did not correlate with price there was more to it than what meets the eye. 
 
 
 
@@ -197,13 +197,13 @@ In this model, I kept all the independent variables that I used on model 1 but i
 
 
 
-Model 2 has an r-squared value of 0.814, indicating that it can account for about 80% of the variability of the sales price as opposed to 49% of model 1. The p value of the independent variables also included in model 1 are again lower than 0.05. Interestingly, when looking at the different zipcodes, I can see that while the majority of the zipcodes p values are lower than 0.05, some zipcodes (98002, 98003, 98023, 98032 and 98092) are not and therefore we have to accept the null hypothesis for these particular zipcodes. 
+Model 2 has an r-squared value of 0.814, indicating that it can account for about 80% of the variability of the sales price as opposed to 49% of model 1. The p value of the independent variables also included in model 1 are again lower than 0.05. Interestingly, when looking at the different zip codes, I can see that while the majority of the zip codes p values are lower than 0.05, some zip codes (98002, 98003, 98023, 98032 and 98092) are not and therefore we have to accept the null hypothesis for these particular zip codes. 
 
 
 <img src="Pictures/QQ_model2.png" width=50%>
 
 
-This model also moderatly meets the normal distribution of the residues and to some extent also meets the homoscedasticity assumption. Thus, overall it seems that is it a decent model to predict the sales price. Now it's time to test if model 2 is in fact able to accuratly predict the sales price of a house in Kings County. To test if model 2 is a good predictor, I used 75% of the data to train the model and the remaining 25% to test the model.  The mean squared error train is 1.23e-09  while the mean squared error test is 1.11e-8. The r squared train is 0.81 and the r squared test is 0.82. Both of these values are similar, which suggests that the model will perform similarly on different data. 
+This model also moderatly meets the normal distribution of the residues and to some extent also meets the homoscedasticity assumption. Thus, overall it seems that is it a decent model to predict the sales price. Now it's time to test if model 2 is in fact able to accuratly predict the sales price of a house in Kings County. To test if model 2 is a good predictor, I used 75% of the data to train the model and the remaining 25% to test the model.  The mean squared error train is 1.23e-09  while the mean squared error test is 1.11e-8. The r squared train is 0.81 and the r squared test i 0.82. Both of these values are similar, which suggests that the model will perform similarly on different data. 
 
 
 
@@ -223,7 +223,7 @@ From my analysis of the Kings County housing database I can conclude that:
 * The best features that predict price are the number of bathrooms, the square footage of living space, the grade attributed by Kings County to the house and how big houses in the nearby neighborhoods;
 
 
-* The location of the house affects the sales price, however it is dependent on the particular zipcode. Certain zipcodes do not have any relationship with the sales price while others do;
+* The location of the house affects the sales price, however it is dependent on the particular zip code. Certain zip codes do not have any relationship with the sales price while others do;
 
 
 * When thinking about renovating a house for sale the best features to focus on are increasing the number of bathrooms as well as increasing the square footage of the living space. Increasing the overall condition of the house is also important as it will result in increasing the grade attributed to the house by Kings County. 
